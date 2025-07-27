@@ -95,3 +95,50 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
+
+
+
+
+
+
+
+<--------------------------------------------------------------------------------------------------------------------------------------------------->
+## 🎬 Movie Feed Section
+
+### 📦 Data Management
+- [x] Created two Supabase tables:
+  - `Categories` – for movie genres/types
+  - `Movies` – list of movies linked to categories
+- [x] Fetched data from Supabase with pagination.
+
+### 🔄 Infinite Scrolling
+- [x] Implemented **vertical infinite scroll** for categories.
+- [x] Implemented **horizontal infinite scroll** for movies in each category.
+
+### ⚡ Performance & Loading Experience
+- [x] Added **global skeleton loader** for initial feed loading.
+- [x] Added **individual skeleton loaders** for each movie card until image loads.
+- [x] Included **fallback image** for error scenarios during image loading.
+
+### 📲 Offline Support & Data Caching
+- [x] Cached initial data using `AsyncStorage`.
+- [x] Used cached data as fallback:
+  - When internet is unavailable.
+  - When Supabase fetch fails.
+
+### 🔗 State Management
+- [x] Used **MobX** for efficient, reactive global state management.
+
+### 🧩 Reusable Components & Clean Architecture
+- [x] Developed reusable components:
+  - Category List
+  - Movie Card
+  - Loaders (global + card-level)
+- [x] Maintained clean, modular folder structure:
+  - `components/`
+  - `screens/`
+  - `stores/` (MobX)
+  - `utils/`
+  - `services/` (Supabase API)
+
